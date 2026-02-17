@@ -28,3 +28,7 @@ def test_palindrome_invalid_with_different_chars():
 def test_palindrome_valid_laval():
     """Tests that the string 'laval' is considered a palindrome."""
     assert is_palindrome("laval") == True
+
+def test_palindrome_invalid_toronto():
+    """Tests that the string 'toronto' is not considered a palindrome."""
+    assert is_palindrome("toronto") == False
