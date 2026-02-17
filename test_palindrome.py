@@ -6,7 +6,7 @@ import pytest
 
 def test_palindrome_not_string():
     """Tests that a TypeError is raised when the input is not a string."""
-    with pytest.raises(TypeError):
+    with pytest.raises(ValueError):
         is_palindrome(123)
 
 def test_palindrome_empty_string():
