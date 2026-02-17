@@ -20,3 +20,7 @@ def test_palindrome_valid_with_single_char():
 def test_palindrome_valid_with_two_same_chars():
     """Tests that a string with two identical characters is considered a palindrome."""
     assert is_palindrome("bb") == True
+
+def test_palindrome_invalid_with_different_chars():
+    """Tests that a string with two different characters is not considered a palindrome."""
+    assert is_palindrome("abc") == False
