@@ -8,3 +8,7 @@ def is_palindrome(value: str) -> bool:
     """Checks if the given string value is a palindrome."""
     if not isinstance(value, str):
         raise TypeError("Input must be a string.")
+    
+    if value == "":
+        return False
+    
