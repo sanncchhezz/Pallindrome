@@ -12,3 +12,7 @@ def test_palindrome_not_string():
 def test_palindrome_empty_string():
     """Tests that an empty string is not considered a palindrome."""
     assert is_palindrome("") == False
+
+def test_palindrome_valid_with_single_char():
+    """Tests that a single character string is considered a palindrome."""
+    assert is_palindrome("a") == True
