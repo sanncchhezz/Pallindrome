@@ -9,10 +9,12 @@ def is_palindrome(value: str) -> bool:
     if not isinstance(value, str):
         raise TypeError("Input must be a string.")
     
-    if value == "":
+    standardized_value = "".join(char.lower() for char in value if char.isalnum())
+
+    if standardized_value == "":
         return False
     
-    deq = deque(value)
+    deq = deque(standardized_value)
 
     while len(deq) > 1:
         if deq.popleft() != deq.pop():

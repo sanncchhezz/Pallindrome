@@ -32,3 +32,7 @@ def test_palindrome_valid_laval():
 def test_palindrome_invalid_toronto():
     """Tests that the string 'toronto' is not considered a palindrome."""
     assert is_palindrome("toronto") == False
+
+def test_palindrome_valid_long_sentenace():
+    """Tests that "Able was I ere I saw Elba" is considered a palindrome."""
+    assert is_palindrome("Able was I ere I saw Elba") == True
