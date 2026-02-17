@@ -16,3 +16,7 @@ def test_palindrome_empty_string():
 def test_palindrome_valid_with_single_char():
     """Tests that a single character string is considered a palindrome."""
     assert is_palindrome("a") == True
+
+def test_palindrome_valid_with_two_same_chars():
+    """Tests that a string with two identical characters is considered a palindrome."""
+    assert is_palindrome("bb") == True
